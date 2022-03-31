@@ -1,0 +1,26 @@
+.star-rating ul {
+  list-style-type: none;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.star-rating ul > li.star {
+  display: inline-block;
+}
+.star-rating ul > li.star > i.fa {
+  font-size: 2.5em;
+  color: #ccc;
+}
+.star-rating ul > li.star.selected > i.fa {
+  color: #ff912c;
+}
+.star-rating ul > li.star.hover > i.fa {
+  color: #ffcc36;
+}
+.star-rating ul.disable > li.star {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.star-rating ul.disable > li.star > i.fa {
+  opacity: 0.4;
+}
